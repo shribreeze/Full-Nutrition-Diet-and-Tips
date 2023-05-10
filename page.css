@@ -222,11 +222,11 @@ ul li a:hover {
 
 .grid {
   display: grid;
-  width: 100%;
+  width: 93%;
   height: 10%;
-  grid-gap: 4rem;
+  grid-gap: 7rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 0.3fr));
-  margin-left: 65px;
+  margin-left: 100px;
 }
 
 .grid-item {
