@@ -1,60 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comfortaa', cursive;
-  }
-  
-  body {
-    background-color: antiquewhite;
-  }
-  
-  .navbar {
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-  }
-  
-  .icon {
-    width: 200px;
-    float: left;
-    height: 70px;
-  }
-  
-  .logo {
-    float: left;
-    margin-top: 5px
-  }
-  
-  .menu {
-    width: 400px;
-    float: left;
-    height: 70px;
-    margin-left: 7.5%;
-  }
-  
-  ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  ul li {
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    color: #0d0d0d;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.25s ease-in-out;
-  }
-  
-  ul li a:hover {
-    color: #ff7200;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo {
+  float: left;
+  margin-top: 5px
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
+  margin-left: 7.5%;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+ul li a:hover {
+  color: #ff7200;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
