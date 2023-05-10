@@ -222,12 +222,11 @@ ul li a:hover {
 
 .grid {
   display: grid;
-  width: 100em;
-  height: 20em;
+  width: 100%;
+  height: 10%;
   grid-gap: 4rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 0.3fr));
-  align-items: start;
-  margin-left: 30px;
+  margin-left: 65px;
 }
 
 .grid-item {
@@ -246,9 +245,9 @@ ul li a:hover {
 
 .card-img {
   display: block;
-  width: 20%;
-  height: 10rem;
-  object-fit: cover;
+  width: 50px;
+  height: 20px;
+  
 }
 
 .card-content {
