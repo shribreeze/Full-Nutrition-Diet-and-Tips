@@ -34,11 +34,19 @@ h2 {
   -webkit-background-clip: text;
 }
 .info{
-  margin-left: 20px;
+  background-color: white;
+  margin: 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 25px;
   font-weight: 300;
   font-size: 18px;
   border: 3px solid #f3232f;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.info:hover{
+  transform: translateY(-0.4%);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4);
 }
 .menu {
   width: 400px;
@@ -76,6 +84,7 @@ ul li a:hover {
 .tab button {
   color: black;
   padding: 10px 25px;
+  font-weight: bold;
   background: rgb(238, 238, 71);
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   border: 2px solid black;
@@ -150,5 +159,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
+  border-radius: 20px;
   background-color: #f1f1f1;
+}
+.card img{
+  border-radius: 10px;
+}
+.card:hover{
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
