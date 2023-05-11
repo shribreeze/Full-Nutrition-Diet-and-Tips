@@ -73,12 +73,6 @@ ul li a:hover {
   color: #ff7200;
 }
 
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
 .tab button {
   color: black;
   padding: 10px 25px;
@@ -93,13 +87,13 @@ ul li a:hover {
 }
 
 .tab button:hover {
-  color: #f3232f;
+  background: linear-gradient(90deg, #3f51b5, #f32323) #2196f3;
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   border: 1px solid #f32323;
 }
 
 .tab button.active {
-  background-color: #f32323 ;
+  background:linear-gradient(90deg, #3f51b5, #f32323) #2196f3;
 }
 
 .tabcontent {
