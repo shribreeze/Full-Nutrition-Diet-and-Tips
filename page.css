@@ -311,3 +311,25 @@ ul li a:hover {
   background-color: white;
   padding: 10px;
 }
+
+#recBlink
+{
+animation-duration : 500ms;
+animation-name : blink;
+animation-iteration-count : infinite;
+animation-direction : alternate;
+}
+
+@keyframes blink
+{
+from
+{
+opacity : 2;
+color : yellow;
+}
+to
+{
+opacity : 2;
+color : rgb(0, 64, 255);
+}
+}
