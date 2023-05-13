@@ -35,7 +35,7 @@
 	margin-bottom: 15px;
 }
 .center h1{
-	color: #fff;
+	color: -webkit-linear-gradient(45deg, #f3232f, rgb(238, 238, 71));
 	font-size: 4rem;
 	text-align: center;
 }
