@@ -35,7 +35,10 @@
 	margin-bottom: 15px;
 }
 .center h1{
-	color: -webkit-linear-gradient(45deg, #f3232f, rgb(238, 238, 71));
+	background: -webkit-linear-gradient(45deg, #f3232f, rgb(238, 238, 71));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1.5px black;
 	font-size: 4rem;
 	text-align: center;
 }
