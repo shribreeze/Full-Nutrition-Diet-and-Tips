@@ -11,6 +11,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dr.Foodie - Get your Meal</title>
     <link rel="stylesheet" href="./diet.css">
+    <style>
+        .rec0, .rec1, .rec2 {
+            display: none;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -39,7 +45,7 @@
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./food.html">FOOD</a></li>
-                    <li><a href="./diet.html">DIET</a></li>
+                    <li><a href="diet.html">DIET</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -55,7 +61,7 @@
                 <h2 id="bannerLine1">Dont't just count calories</h2>
                 <h1 id="bannerLine2">Know the amount of fiber in your Food</h1>
                 <br>
-                <a href="#recommend-plan"><button type="submit" class="bannerButton"><b>Click for <span id="recBlink">Recommended</span> Meal
+                <a href="#mealForm"><button type="submit" class="bannerButton"><b>Click for a FREE meal
                             plan</b></button></a>
             </div>
         </div>
@@ -72,14 +78,13 @@
         <br>
         <br>
         <br>
-        <center>
-        <div class="grid" id="recommend-plan">
+        <div class="grid">
             <div class="grid-item">
                 <div class="card">
-                    <img class="" src="./images/Lose Weight.jpg" alt="LOSE WEIGHT" width="405px">
+                    <img class="" src="./images/Lose Weight.jpg" alt="LOSE WEIGHT">
                     <div class="card-content">
-                        <h1 class="card-header">LOSE WEIGHT</h1>
-                        <p class="card-text">Check Diet Plans for Losing Weight</p>
+                        <h1 class="card-header">LOSE WEIGHT <span style="color:green;font-size: 15px;font-weight:bold;" class="rec1">(Recommended)</span></h1>
+                        <p class="card-text">Diet for Losing Weight</p>
                         <button onclick="window.location.href = './weight_loss.html';" class="card-btn ">Visit<span>&rarr;</span></button>
                     </div>
                 </div>
@@ -87,10 +92,10 @@
 
             <div class="grid-item">
                 <div class="card">
-                    <img class="" src="./images/Maintain Weight.jpg" alt="MAINTAIN WEIGHT" width="405px">
+                    <img class="" src="./images/Maintain Weight.jpg" alt="MAINTAIN WEIGHT">
                     <div class="card-content">
-                        <h1 class="card-header">MAINTAIN WEIGHT</h1>
-                        <p class="card-text">Check Diet Plans to Maintain Weight</p>
+                        <h1 class="card-header">MAINTAIN WEIGHT <span style="color:green;font-size: 15px;font-weight:bold;" class="rec2">(Recommended)</span></h1>
+                        <p class="card-text">Diet for Maintaining Weight</p>
                         <button onclick="window.location.href = './maintain_diet.html';" class="card-btn ">Visit<span>&rarr;</span></button>
                     </div>
                 </div>
@@ -98,20 +103,26 @@
 
             <div class="grid-item">
                 <div class="card">
-                    <img class="" src="./images/weight-gain.jpg" alt="GAIN WEIGHT" width="450px">
+                    <img class="" src="./images/weight-gain.jpg" alt="GAIN WEIGHT">
                     <div class="card-content">
-                        <h1 class="card-header">GAIN WEIGHT</h1>
-                        <p class="card-text"> Check Diet Plans for Gaining Weight</p>
+                        <h1 class="card-header">GAIN WEIGHT <span style="color:green;font-size: 15px;font-weight:bold;" class="rec0">(Recommended)</span></h1>
+                        <p class="card-text">Diet for Weight Gain</p>
                         <button onclick="window.location.href = './gain_weight.html';" class="card-btn ">Visit<span>&rarr;</span></button>
                     </div>
                 </div>
             </div>
         </div>
-    </center>
         <br>
         <br>
 
     </div>
+    <script>
+        let bmiRes = localStorage.getItem('bmiRes') ? localStorage.getItem('bmiRes') : "4";
+        if(bmiRes!="4") {
+            document.querySelector(".rec"+bmiRes).style.display="block";
+            localStorage.clear();
+        }
+    </script>
 </body>
 
 </html>

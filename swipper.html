@@ -11,22 +11,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <script>
+      let bmiRes = 0;
+      
       function calculateBMI() {
     let weight = document.getElementById("weight").value;
     let height = document.getElementById("height").value / 100;
     let bmi = weight / (height * height);
     document.getElementById("result").value = bmi.toFixed(1);
 
+
     if(bmi<18.5){
       document.querySelector(".abc").innerHTML = 'You are underweight';
+      bmiRes=0;  
+    }
+    else if (bmi>24.9) {
+      document.querySelector(".abc").innerHTML = 'You are Overweight';
+      bmiRes=1;  
+    }
+    else{
+      document.querySelector(".abc").innerHTML = 'You are Normal';
+      bmiRes=2;  
       }
-      else if (bmi>24.9) {
-        document.querySelector(".abc").innerHTML = 'You are Overweight';
-      }
-      else{
-        document.querySelector(".abc").innerHTML = 'You are Normal';
-      }
-  } 
+      localStorage.setItem('bmiRes', bmiRes);
+    } 
 
 </script>
 
@@ -96,7 +103,7 @@
             </div>
             <input type="text" id="result" name="result" readonly>
             <h3 class="abc">You're all good to go</h3>
-            <button type="submit" onclick="window.location.href='./diet.html'">Done</button>
+            <button type="submit" onclick="window.location.href='./diet.html';">Done</button>
             <button class="secondary" onclick="restart()">Restart</button>
           </div>
         </div>
