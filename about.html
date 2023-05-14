@@ -1,97 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Responsive team section</title>
-	<link rel="stylesheet" type="text/css" href="./about.css">
-
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./about.css">
+     <title>Card with Sliding Feature</title> 
 </head>
 <body>
 
-	<section class="team">
-	<ul class="squares">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	
-	
-		<div class="center">
-			<h1>Our Team</h1>
-		</div>
+  <section>
+    
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
 
-		<div class="team-content">
-			<div class="box">
-				<img src="./images/Vishu.jpg">
-				<h3>Vishwajeet Singh</h3>
-				<h5>Web Developer</h5>
-				<div class="icons">
-					<a href="https://twitter.com/Vishu_tw"><i class="ri-twitter-fill"></i></a>
-					<a href="https://github.com/vishu2820"><i class="ri-github-fill"></i></a>
-					<a href="https://www.instagram.com/vishu_ig_/"><i class="ri-instagram-fill"></i></a>
-				</div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+             <img src="./images/Gurpreet.jpg" alt=""> 
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Gurpreet Kaur</span>
+              <span class="profession">Supervisor</span>
+            </div>
+
+			<div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="./images/Vishu.jpg" alt=""> 
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Vishwajeet Singh</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+			<div class="media-icons">
+				<a href="https://github.com/vishu2820"><i class="fab fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/vishwajeet-singh-4309071a9/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.instagram.com/vishu_ig_/"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+           <img src="./images/Sameer.jpg" alt=""> 
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Sameer Gautam</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+            <div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+            <img src="./images/Aditi.jpg" alt=""> 
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Aditi Yadav</span>
+              <span class="profession">Researcher and Writer</span>
+            </div>
+
+            <div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="./images/Mohit.jpg" alt=""> 
+            </div>
+            <div class="name-profession">
+              <span class="name">Mohit Dogra</span>
+              <span class="profession">Editor</span>
+            </div>
+
+            <div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+            <img src="./images/Prince.jpg" alt=""> 
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Prince Keyal</span>
+              <span class="profession">Data Scientist</span>
+            </div>
+
+			<div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+           <img src="images/img8.jpg" alt=""> 
+            </div>
+
+            <div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
 			</div>
 
-			<div class="box">
-				<img src="./images/Sameer.jpg">
-				<h3>Sameer Gautam</h3>
-				<h5>Web Developer</h5>
-				<div class="icons">
-					<a href="https://twitter.com/ImSameerGautam"><i class="ri-twitter-fill"></i></a>
-					<a href="https://github.com/shribreeze"><i class="ri-github-fill"></i></a>
-					<a href="https://www.instagram.com/sameer.gautam_/"><i class="ri-instagram-fill"></i></a>
-				</div>
-			</div>
+            <div class="name-profession">
+              <span class="name">Someone Name</span>
+              <span class="profession">Web Developer</span>
+            </div>
 
-			<div class="box">
-				<img src="./images/Aditi.jpg">
-				<h3>Aditi Yadav</h3>
-				<h5>Researcher and Writer</h5>
-				<div class="icons">
-					<a href="#"><i class="ri-twitter-fill"></i></a>
-					<a href="#"><i class="ri-github-fill"></i></a>
-					<a href="#"><i class="ri-instagram-fill"></i></a>
-				</div>
+            <div class="media-icons">
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
 			</div>
+          </div>
+        </div>
 
-			<div class="box">
-				<img src="./images/Mohit.jpg">
-				<h3>Mohit Dogra</h3>
-				<h5>Editor</h5>
-				<div class="icons">
-					<a href="#"><i class="ri-twitter-fill"></i></a>
-					<a href="#"><i class="ri-github-fill"></i></a>
-					<a href="#"><i class="ri-instagram-fill"></i></a>
-				</div>
-			</div>
+      </div>
+    </div>
 
-			<div class="box">
-				<img src="./images/Prince.jpg">
-				<h3>Prince Keyal</h3>
-				<h5>Data Scientist</h5>
-				<div class="icons">
-					<a href="#"><i class="ri-twitter-fill"></i></a>
-					<a href="#"><i class="ri-github-fill"></i></a>
-					<a href="#"><i class="ri-instagram-fill"></i></a>
-				</div>
-			</div>
-			
+    <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+  </section>
 
-		</div>
-	</section>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>
